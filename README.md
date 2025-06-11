@@ -1,5 +1,7 @@
-# Vue 3 + Vite
+This repo is sample code for this article https://novrian.substack.com/publish/posts/detail/165701101/share-center
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+What is Lazy-Loading?
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+In default condition, all components in your Vue application is bundled together and loaded when the user first accesses your site. This can result in longer load times as the application grows in size.
+
+Lazy-loading solves this problem by loading components only when they are needed. For example, the AdminPanel.vue component will only be fetched from the server when a user navigates to the /admin route.
